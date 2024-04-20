@@ -4,18 +4,20 @@ body {
   margin: 0;
   padding: 0;
   background-color: #F1F0EA;
-  margin-top: 80px;
+  margin-top: 90px;
 }
 
 /* h1 tags */
 h1 {
   text-align: center;
   color: #333;
+  margin-top: 90px;
 }
 
 /* h2 tags */
 h2 {
   color: #333;
+  margin-top: 90px;
 }
 
 /* section tags */
@@ -190,3 +192,15 @@ nav a.active {
 footer {
   text-align: center;
 }
+
+#map {
+  height: 75%;
+  margin: 35px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+ }
