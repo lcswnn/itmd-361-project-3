@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
   <title>Lucas Waunn - ITMD Project 3 - Favorites</title>
+  <script src="js/slider.js"></script>
 </head>
   <body>
     <header>
@@ -18,6 +19,17 @@
     </header>
     <h1>Lucas's Favorites</h1>
     <div class = "favorites">
+      <section id="slider">
+        <h2>All Favorites at a Glance</h2>
+        <div class="slider-container">
+          <img class="slider-image" src="media/hitchhiker's-guide.jpg" alt="hitchhiker's guide to the galaxy book cover">
+          <img class="slider-image" src="media/baseball.jpg" alt="player hitting a baseball">
+          <img class="slider-image" src="media/john-mayer.jpg" alt="john mayer playing the guitar on stage">
+          <img class="slider-image" src="media/hawaii.jpg" alt="hawaii beachfront">
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      </section>
       <section id="movie">
         <h2>Favorite Movie: The Social Network</h2>
         <iframe src="https://www.youtube.com/embed/lB95KLmpLR4?si=7UtAI5NR73UHiQs-" title="The Social Network Movie Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
