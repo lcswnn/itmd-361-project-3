@@ -4,7 +4,7 @@ async function initMap() {
   // The location of Rowe Village
   const rowe = { lat: 41.833710, lng: -87.626209};
 
-  const { Map } = await google.maps.importLibrary("maps");
+  const { Map, InfoWindow } = await google.maps.importLibrary("maps");
   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
 
@@ -24,6 +24,19 @@ async function initMap() {
     }
     
 	});
+
+  const infoWindow = new InfoWindow({
+    content: "Illinois Insitute of Technology's Rowe Village"
+  });
+
+  marker.addListener("mouseover", () => {
+    infoWindow.open(map, marker);
+  });
+
+  marker.addListener("mouseout", () => {
+    infoWindow.close();
+  });
 }
+
 
 initMap();
