@@ -1,4 +1,3 @@
-// Initialize and add the map
 let map;
 
 async function initMap() {

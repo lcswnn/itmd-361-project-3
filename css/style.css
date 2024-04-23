@@ -17,7 +17,7 @@ h1 {
 /* h2 tags */
 h2 {
   color: #333;
-  margin-top: 90px;
+  margin-top: 20px;
 }
 
 /* section tags */
@@ -193,7 +193,7 @@ footer {
 }
 
 #map {
-  height: 75%;
+  height: 80%;
   margin: 35px;
 }
 
@@ -210,24 +210,26 @@ body {
 }
 
 .slider-container {
-  width: 100%;
+  margin: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+  gap: 10px;
   overflow: hidden;
-  position: relative;
 }
 
 .slider-image {
+  margin-top: 30px;
   display: none;
-}
-
-.slider-image img {
-  width: 100%;
+  text-align: center; 
+  width: auto;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .prev, .next {
-  position: absolute;
+  position: relative;
   top: 50%;
-  transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
@@ -237,9 +239,9 @@ body {
 }
 
 .prev {
-  left: 0;
+  left: 0px;
 }
 
 .next {
-  right: 0;
+  right: 0px;
 }
