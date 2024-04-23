@@ -235,7 +235,6 @@ body {
   border: none;
   cursor: pointer;
   padding: 10px;
-  z-index: 1;
 }
 
 .prev {
